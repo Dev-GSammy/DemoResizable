@@ -39,7 +39,6 @@
                TextColor="Black"
                Placeholder="Password"/>
             <Button Grid.Row="3" x:Name="LoginButton"
-                Clicked="LoginButton_Clicked"
                 Text="Login"
                 FontAttributes="Bold"
                 FontSize="Medium"
