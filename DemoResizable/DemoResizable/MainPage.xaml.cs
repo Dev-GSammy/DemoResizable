@@ -13,6 +13,9 @@ namespace DemoResizable
         public MainPage()
         {
             InitializeComponent();
+            var assembly = typeof(MainPage);
+
+            SplashScreenImage.Source = ImageSource.FromResource("DemoResizable.Assets.Images.splashpage.png", assembly);
         }
     }
 }
