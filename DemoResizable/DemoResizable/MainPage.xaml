@@ -5,7 +5,7 @@
              xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
              x:Class="DemoResizable.MainPage">
 
-    <Grid  xct:CornerRadiusEffect.CornerRadius="30">
+    <Grid  >
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -13,7 +13,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>                                        
         </Grid.RowDefinitions>
-        <StackLayout BackgroundColor="AntiqueWhite">
+        <StackLayout BackgroundColor="AntiqueWhite" xct:CornerRadiusEffect.CornerRadius="30">
             <Label Text="Student Attendance" TextColor="Blue" Margin="10,30,10,0" HorizontalTextAlignment="Center" FontSize="Title" FontFamily="Arial black" FontAttributes="Bold"/>
             <Label Text="Management System" TextColor="Blue" Margin="10,0,10,30" HorizontalTextAlignment="Center" FontSize="Title" FontFamily="Arial black" FontAttributes="Bold"/>
             <Image Grid.Row="1" x:Name="SplashScreenImage"
@@ -45,7 +45,7 @@
                 BackgroundColor="Blue"
                 HorizontalOptions="FillAndExpand"
                 Margin="10,10,10,0"/>
-            <StackLayout Grid.Row="4" Orientation="Horizontal">
+            <StackLayout Grid.Row="4" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="EndAndExpand">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
