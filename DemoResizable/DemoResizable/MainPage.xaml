@@ -3,9 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:DemoResizable"
              xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
-             x:Class="DemoResizable.MainPage">
+             x:Class="DemoResizable.MainPage"
+             BackgroundColor="Transparent">
 
-    <Grid  >
+    <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -13,7 +14,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>                                        
         </Grid.RowDefinitions>
-        <StackLayout BackgroundColor="AntiqueWhite" xct:CornerRadiusEffect.CornerRadius="30">
+        <StackLayout BackgroundColor="AntiqueWhite" xct:CornerRadiusEffect.CornerRadius="30" VerticalOptions="FillAndExpand">
             <Label Text="Student Attendance" TextColor="Blue" Margin="10,30,10,0" HorizontalTextAlignment="Center" FontSize="Title" FontFamily="Arial black" FontAttributes="Bold"/>
             <Label Text="Management System" TextColor="Blue" Margin="10,0,10,30" HorizontalTextAlignment="Center" FontSize="Title" FontFamily="Arial black" FontAttributes="Bold"/>
             <Image Grid.Row="1" x:Name="SplashScreenImage"
@@ -45,7 +46,7 @@
                 BackgroundColor="Blue"
                 HorizontalOptions="FillAndExpand"
                 Margin="10,10,10,0"/>
-            <StackLayout Grid.Row="4" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="EndAndExpand">
+            <StackLayout Grid.Row="4" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="FillAndExpand">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
@@ -65,7 +66,6 @@
                HorizontalOptions="CenterAndExpand"
                VerticalTextAlignment="End"
                VerticalOptions="EndAndExpand" />
-
         </StackLayout>  
     </Grid> 
 </ContentPage>

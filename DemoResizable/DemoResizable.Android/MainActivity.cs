@@ -12,6 +12,7 @@ namespace DemoResizable.Droid
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            this.Window.AddFlags(Android.Views.WindowManagerFlags.Fullscreen);
             base.OnCreate(savedInstanceState);
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
