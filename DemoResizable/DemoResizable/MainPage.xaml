@@ -47,7 +47,7 @@
                 HorizontalOptions="FillAndExpand"
                 Margin="10,10,10,0"/>
             <StackLayout Grid.Row="4" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="FillAndExpand">
-                <Grid>
+                <Grid VerticalOptions="EndAndExpand" HorizontalOptions="Center">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="*"/>
