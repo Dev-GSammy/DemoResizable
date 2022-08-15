@@ -13,24 +13,26 @@
         </Grid.RowDefinitions>
         <StackLayout Grid.Row="0" VerticalOptions="Start">
             <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="25"/>
-            </Grid.RowDefinitions>
-          </Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+            </Grid>
             <Label Text="Student Attendance" TextColor="{StaticResource TheBluePart}" Margin="10,30,10,0" HorizontalTextAlignment="Center" FontSize="Title" FontFamily="Arial black" FontAttributes="Bold"/>
             <Label Text="Management System" TextColor="{StaticResource TheBluePart}" Margin="10,0,10,30" HorizontalTextAlignment="Center" FontSize="Title" FontFamily="Arial black" FontAttributes="Bold"/>
-            <Image Grid.Row="1" x:Name="SplashScreenImage"
+        </StackLayout>
+        <StackLayout Grid.Row="1" VerticalOptions="Center">
+            <BoxView x:Name="Boxviewcontainer"
+             CornerRadius="20"
+             Margin="10"
+                     VerticalOptions="Center"
+                     HorizontalOptions="FillAndExpand"
+                     />
+            <Image x:Name="SplashScreenImage"
                Aspect="AspectFit"
                Margin="10"
+                   VerticalOptions="Center"
                HorizontalOptions="FillAndExpand"/>
-            <Label Grid.Row="2" Text="Welcome"
-               HorizontalOptions="Center"
-               Margin="0,10,0,10"
-               TextColor="DodgerBlue"
-               FontSize="Large"
-               FontAttributes="Bold"/>
         </StackLayout>
         <StackLayout Grid.Row="2" VerticalOptions="CenterAndExpand">
             <Grid>
@@ -55,6 +57,7 @@
                TextColor="Black"
                Placeholder="Password"/>
             <Button Grid.Row="2" x:Name="LoginButton"
+                CornerRadius="10"
                 Text="Login"
                 FontAttributes="Bold"
                 FontSize="Medium"
@@ -70,7 +73,7 @@
                     <RowDefinition Height="auto"/>
                 </Grid.RowDefinitions>
             </Grid>
-            <StackLayout Grid.Row="0" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="End" Margin="5,10">
+            <StackLayout Grid.Row="0" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="End" Margin="5,5">
                 <Button Text="New? Register" Grid.Column="0" Grid.Row="1" FontSize="Small" TextColor="{StaticResource TheBluePart}" BackgroundColor="{StaticResource TheAlmostWhite}"/>
                 <Button Text="Forgot Password?" Grid.Column="1" Grid.Row="1" FontSize="Small" TextColor="{StaticResource TheBluePart}" BackgroundColor="{StaticResource TheAlmostWhite}"/>
             </StackLayout>
@@ -79,7 +82,7 @@
                FontAttributes="Italic"
                BackgroundColor="{StaticResource TheAlmostWhite}"
                TextColor="{StaticResource TheBluePart}"
-               FontSize="Micro"
+               FontSize="Small"
                HorizontalTextAlignment="Center"
                HorizontalOptions="CenterAndExpand"
                VerticalTextAlignment="End"
