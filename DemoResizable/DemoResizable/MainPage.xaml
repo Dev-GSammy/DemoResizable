@@ -7,14 +7,14 @@
              BackgroundColor="Transparent">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="25"/>
-            <RowDefinition Height="Auto"/>
             <RowDefinition Height="auto"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
-        <StackLayout BackgroundColor="AntiqueWhite" xct:CornerRadiusEffect.CornerRadius="30" VerticalOptions="FillAndExpand" HeightRequest="1500">
+        <StackLayout BackgroundColor="AntiqueWhite" xct:CornerRadiusEffect.CornerRadius="30" VerticalOptions="FillAndExpand" HeightRequest="850">
             <Label Text="Student Attendance" TextColor="Blue" Margin="10,30,10,0" HorizontalTextAlignment="Center" FontSize="Title" FontFamily="Arial black" FontAttributes="Bold"/>
             <Label Text="Management System" TextColor="Blue" Margin="10,0,10,30" HorizontalTextAlignment="Center" FontSize="Title" FontFamily="Arial black" FontAttributes="Bold"/>
             <Image Grid.Row="1" x:Name="SplashScreenImage"
@@ -32,22 +32,25 @@
                Margin="10,5"
                PlaceholderColor="DimGray"
                TextColor="Black"
-               Placeholder="{Binding ScreenWidth}"/>
+                   VerticalOptions="End"
+               Placeholder="Username"/>
             <Entry Grid.Row="3" x:Name="passwordEntry"
                FontSize="Body"
                Margin="10,5"
                PlaceholderColor="DimGray"
+                   VerticalOptions="End"
                TextColor="Black"
-               Placeholder="{Binding ScreenHeight}"/>
+               Placeholder="Password"/>
             <Button Grid.Row="3" x:Name="LoginButton"
                 Text="Login"
                 FontAttributes="Bold"
                 FontSize="Medium"
+                    VerticalOptions="End"
                 BackgroundColor="Blue"
                 HorizontalOptions="FillAndExpand"
                 Margin="10,10,10,0"/>
 
-            <StackLayout Grid.Row="4" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="End" Margin="5,10">
+            <StackLayout Grid.Row="4" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="EndAndExpand" Margin="5,10">
                 <Button Text="New? Register" Grid.Column="0" Grid.Row="1" FontSize="Small" TextColor="Blue" BackgroundColor="AntiqueWhite"/>
                 <Button Text="Forgot Password?" Grid.Column="1" Grid.Row="1" FontSize="Small" TextColor="Blue" BackgroundColor="AntiqueWhite"/>
             </StackLayout>
