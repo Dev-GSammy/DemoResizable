@@ -5,42 +5,41 @@
              xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
              x:Class="DemoResizable.MainPage"
              BackgroundColor="Transparent">
-    <StackLayout BackgroundColor="Blue">
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="25"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            <StackLayout BackgroundColor="AntiqueWhite" xct:CornerRadiusEffect.CornerRadius="30" VerticalOptions="FillAndExpand">
-                <Label Text="Student Attendance" TextColor="Blue" Margin="10,30,10,0" HorizontalTextAlignment="Center" FontSize="Title" FontFamily="Arial black" FontAttributes="Bold"/>
-                <Label Text="Management System" TextColor="Blue" Margin="10,0,10,30" HorizontalTextAlignment="Center" FontSize="Title" FontFamily="Arial black" FontAttributes="Bold"/>
-                <Image Grid.Row="1" x:Name="SplashScreenImage"
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackLayout BackgroundColor="AntiqueWhite" xct:CornerRadiusEffect.CornerRadius="30" VerticalOptions="FillAndExpand" HeightRequest="1500">
+            <Label Text="Student Attendance" TextColor="Blue" Margin="10,30,10,0" HorizontalTextAlignment="Center" FontSize="Title" FontFamily="Arial black" FontAttributes="Bold"/>
+            <Label Text="Management System" TextColor="Blue" Margin="10,0,10,30" HorizontalTextAlignment="Center" FontSize="Title" FontFamily="Arial black" FontAttributes="Bold"/>
+            <Image Grid.Row="1" x:Name="SplashScreenImage"
                Aspect="AspectFit"
                Margin="10"
                HorizontalOptions="FillAndExpand"/>
-                <Label Grid.Row="2" Text="Welcome"
+            <Label Grid.Row="2" Text="Welcome"
                HorizontalOptions="Center"
                Margin="0,10,0,10"
                TextColor="DodgerBlue"
                FontSize="Large"
                FontAttributes="Bold"/>
-                <Entry Grid.Row="3" x:Name="nameEntry"
+            <Entry Grid.Row="3" x:Name="nameEntry"
                FontSize="Body"
                Margin="10,5"
                PlaceholderColor="DimGray"
                TextColor="Black"
                Placeholder="{Binding ScreenWidth}"/>
-                <Entry Grid.Row="3" x:Name="passwordEntry"
+            <Entry Grid.Row="3" x:Name="passwordEntry"
                FontSize="Body"
                Margin="10,5"
                PlaceholderColor="DimGray"
                TextColor="Black"
                Placeholder="{Binding ScreenHeight}"/>
-                <Button Grid.Row="3" x:Name="LoginButton"
+            <Button Grid.Row="3" x:Name="LoginButton"
                 Text="Login"
                 FontAttributes="Bold"
                 FontSize="Medium"
@@ -48,12 +47,12 @@
                 HorizontalOptions="FillAndExpand"
                 Margin="10,10,10,0"/>
 
-                <StackLayout Grid.Row="4" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="End" Margin="5,10">
-                    <Button Text="New? Register" Grid.Column="0" Grid.Row="1" FontSize="Small" TextColor="Blue" BackgroundColor="AntiqueWhite"/>
-                    <Button Text="Forgot Password?" Grid.Column="1" Grid.Row="1" FontSize="Small" TextColor="Blue" BackgroundColor="AntiqueWhite"/>
-                </StackLayout>
+            <StackLayout Grid.Row="4" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="End" Margin="5,10">
+                <Button Text="New? Register" Grid.Column="0" Grid.Row="1" FontSize="Small" TextColor="Blue" BackgroundColor="AntiqueWhite"/>
+                <Button Text="Forgot Password?" Grid.Column="1" Grid.Row="1" FontSize="Small" TextColor="Blue" BackgroundColor="AntiqueWhite"/>
+            </StackLayout>
 
-                <Label Grid.Row="5" Text="Student Attendance Management System"
+            <Label Grid.Row="5" Text="Student Attendance Management System"
                Margin="10,5"
                FontAttributes="Italic"
                BackgroundColor="Transparent"
@@ -63,7 +62,6 @@
                HorizontalOptions="CenterAndExpand"
                VerticalTextAlignment="End"
                VerticalOptions="EndAndExpand" />
-            </StackLayout>
-        </Grid>
-    </StackLayout>
+        </StackLayout>
+    </Grid>
 </ContentPage>
