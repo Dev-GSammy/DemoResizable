@@ -4,14 +4,22 @@ using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
 using Android.OS;
+using Xamarin.Essentials;
+using Xamarin.Forms;
+using Xamarin.CommunityToolkit;
+using Xamarin.Android;
 
 namespace DemoResizable.Droid
 {
     [Activity(Label = "DemoResizable", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize )]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
+        
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            
+            int ScreenWidth = (int)Resources.DisplayMetrics.WidthPixels;
+            int ScreenHeight = (int)Resources.DisplayMetrics.HeightPixels;
             this.Window.AddFlags(Android.Views.WindowManagerFlags.Fullscreen);
             base.OnCreate(savedInstanceState);
 

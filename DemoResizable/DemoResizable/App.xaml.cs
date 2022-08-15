@@ -9,10 +9,13 @@ namespace DemoResizable
         public App()
         {
             InitializeComponent();
-
-            MainPage = new MainPage();
+            int screenWidth;
+            int screenHeight;
+        MainPage = new MainPage();
         }
-
+        public static class app
+        {
+        }
         protected override void OnStart()
         {
         }
