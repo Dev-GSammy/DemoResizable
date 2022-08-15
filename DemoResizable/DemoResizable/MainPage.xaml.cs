@@ -17,8 +17,9 @@ namespace DemoResizable
             var assembly = typeof(MainPage);
 
             SplashScreenImage.Source = ImageSource.FromResource("DemoResizable.Assets.Images.splashpage.png", assembly);
-            int ScreenWidth = (int)Resources.DisplayMetrics.WidthPixels;
-            int ScreenHeight = (int)Resources.DisplayMetrics.HeightPixels;
+            // int ScreenWidth = (int)Resources.DisplayMetrics.WidthPixels;
+            //int ScreenHeight = (int)Resources.DisplayMetrics.HeightPixels;
+            
         }
     }
 }
