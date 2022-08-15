@@ -19,8 +19,8 @@
                 <RowDefinition Height="25"/>
             </Grid.RowDefinitions>
           </Grid>
-            <Label Text="Student Attendance" TextColor="Blue" Margin="10,30,10,0" HorizontalTextAlignment="Center" FontSize="Title" FontFamily="Arial black" FontAttributes="Bold"/>
-            <Label Text="Management System" TextColor="Blue" Margin="10,0,10,30" HorizontalTextAlignment="Center" FontSize="Title" FontFamily="Arial black" FontAttributes="Bold"/>
+            <Label Text="Student Attendance" TextColor="{StaticResource TheBluePart}" Margin="10,30,10,0" HorizontalTextAlignment="Center" FontSize="Title" FontFamily="Arial black" FontAttributes="Bold"/>
+            <Label Text="Management System" TextColor="{StaticResource TheBluePart}" Margin="10,0,10,30" HorizontalTextAlignment="Center" FontSize="Title" FontFamily="Arial black" FontAttributes="Bold"/>
             <Image Grid.Row="1" x:Name="SplashScreenImage"
                Aspect="AspectFit"
                Margin="10"
@@ -43,14 +43,14 @@
             <Entry Grid.Row="0" x:Name="nameEntry"
                FontSize="Body"
                Margin="10,5"
-               PlaceholderColor="DimGray"
+               PlaceholderColor="{StaticResource TheAshPart}"
                TextColor="Black"
                    VerticalOptions="End"
                Placeholder="Username"/>
             <Entry Grid.Row="1" x:Name="passwordEntry"
                FontSize="Body"
                Margin="10,5"
-               PlaceholderColor="DimGray"
+               PlaceholderColor="{StaticResource TheAshPart}"
                    VerticalOptions="End"
                TextColor="Black"
                Placeholder="Password"/>
@@ -59,7 +59,7 @@
                 FontAttributes="Bold"
                 FontSize="Medium"
                     VerticalOptions="End"
-                BackgroundColor="Blue"
+                BackgroundColor="{StaticResource TheBluePart}"
                 HorizontalOptions="FillAndExpand"
                 Margin="10,10,10,0"/>
         </StackLayout>
@@ -71,14 +71,14 @@
                 </Grid.RowDefinitions>
             </Grid>
             <StackLayout Grid.Row="0" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="End" Margin="5,10">
-                <Button Text="New? Register" Grid.Column="0" Grid.Row="1" FontSize="Small" TextColor="Blue" BackgroundColor="AntiqueWhite"/>
-                <Button Text="Forgot Password?" Grid.Column="1" Grid.Row="1" FontSize="Small" TextColor="Blue" BackgroundColor="AntiqueWhite"/>
+                <Button Text="New? Register" Grid.Column="0" Grid.Row="1" FontSize="Small" TextColor="{StaticResource TheBluePart}" BackgroundColor="{StaticResource TheAlmostWhite}"/>
+                <Button Text="Forgot Password?" Grid.Column="1" Grid.Row="1" FontSize="Small" TextColor="{StaticResource TheBluePart}" BackgroundColor="{StaticResource TheAlmostWhite}"/>
             </StackLayout>
             <Label Grid.Row="1" Text="Student Attendance Management System"
                Margin="10,5"
                FontAttributes="Italic"
-               BackgroundColor="Transparent"
-               TextColor="Blue"
+               BackgroundColor="{StaticResource TheAlmostWhite}"
+               TextColor="{StaticResource TheBluePart}"
                FontSize="Micro"
                HorizontalTextAlignment="Center"
                HorizontalOptions="CenterAndExpand"
