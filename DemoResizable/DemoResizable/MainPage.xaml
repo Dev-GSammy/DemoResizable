@@ -21,18 +21,13 @@
             <Label Text="Student Attendance" TextColor="{StaticResource TheBluePart}" Margin="10,30,10,0" HorizontalTextAlignment="Center" FontSize="Title" FontFamily="Arial black" FontAttributes="Bold"/>
             <Label Text="Management System" TextColor="{StaticResource TheBluePart}" Margin="10,0,10,30" HorizontalTextAlignment="Center" FontSize="Title" FontFamily="Arial black" FontAttributes="Bold"/>
         </StackLayout>
-        <StackLayout Grid.Row="1" VerticalOptions="Center">
-            <BoxView x:Name="Boxviewcontainer"
-             CornerRadius="20"
-             Margin="10"
-                     VerticalOptions="Center"
-                     HorizontalOptions="FillAndExpand"
-                     />
+        <StackLayout Grid.Row="1" VerticalOptions="Center" Padding="0" Margin="0">
             <Image x:Name="SplashScreenImage"
-               Aspect="AspectFit"
+               Aspect="AspectFit" 
                Margin="10"
                    VerticalOptions="Center"
-               HorizontalOptions="FillAndExpand"/>
+               HorizontalOptions="Center">
+            </Image>
         </StackLayout>
         <StackLayout Grid.Row="2" VerticalOptions="CenterAndExpand">
             <Grid>
